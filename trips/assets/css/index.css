@@ -1,0 +1,105 @@
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;  
+}
+
+body {
+  font-family: "Montserrat", "sans-serif", "Mansalva", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-background {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: auto;
+}
+
+.option {  
+  margin: 10vh;
+  font-weight: 800;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  flex: auto;
+  align-items: center;
+  width: 50vh;
+  height: 35vh;
+  text-align: center;
+}
+
+.option:hover {
+  transition: .5s;
+  transform: scale(0.97);
+  color: #ff9800;
+  cursor: pointer;  
+}
+
+.first-option {
+  background-image: url("../img/option-international-trip.png");
+  background-repeat: no-repeat;
+  color:#b80000;
+  height: 50vh;
+}
+
+.second-option {
+  background-image: url("../img/option-nacional-trip.png");
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 50vh;
+}
+
+.third-option {
+  background-image: url("../img/option-restaurant.png");
+  background-repeat: no-repeat;
+  color: #38419d;
+  height: 50vh;
+}
+
+.main-footer {
+  background-color: #38419d;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    margin: 0;
+  }
+
+  nav {
+    background-image: url('');
+    height: 10vh;
+    width: 100vw;
+  }
+
+  nav p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .main-background {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: scroll;
+  }
+
+  .main-options {
+    display: unset;
+  }
+}
